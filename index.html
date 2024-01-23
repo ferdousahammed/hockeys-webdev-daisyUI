@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +30,8 @@
           extend: {
             colors: {
               "red-yellow": "#FF4240",
+              dark: "#131318",
+              lightgray: "#13131863",
             },
           },
         },
@@ -41,9 +43,163 @@
       }
     </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="font-manrope">
+    <header class="px-[9.375%] mx-auto">
+      <nav class="my-3 lg:my-5">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 text-base font-bold"
+              >
+                <li>
+                  <a
+                    class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                    >Pages</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost hover:bg-transparent">
+              <div class="font-extrabold text-dark text-4xl">
+                Hockey<span class="text-red-yellow">’</span>s
+              </div>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-dark font-bold">
+              <li>
+                <a
+                  class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-transparent hover:border-red-yellow hover:text-red-yellow"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end flex gap-4">
+            <i
+              class="invisible md:visible fa-solid text-lightgray fa-magnifying-glass"
+            ></i>
+            <a
+              class="btn text-lg bg-red-yellow hover:bg-red-400 px-6 text-white"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- banner section  -->
+      <div class="carousel relative w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="mx-auto w-full">
+            <img
+              src="./Images/1.png"
+              class="h-[450px] lg:h-[600px] rounded-2xl object-cover w-full"
+            />
+          </div>
+
+          <div
+            class="absolute flex gap-2 transform -translate left-5 right-5 bottom-5 max-lg:justify-center"
+          >
+            <a href="#slide2" class="btn btn-circle bg-dark text-white">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-dark text-white">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="mx-auto w-full">
+            <img
+              src="./Images/3.png"
+              class="h-[450px] lg:h-[600px] rounded-2xl object-cover w-full"
+            />
+          </div>
+
+          <div
+            class="absolute flex gap-2 left-5 right-5 bottom-5 max-lg:justify-center"
+          >
+            <a href="#slide1" class="btn btn-circle bg-dark text-white">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-dark text-white">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="relative flex justify-center">
+        <div
+          class="lg:absolute mt-2 bottom-5 right-5 bg-dark p-8 text-left space-y-4 rounded-2xl lg:max-w-lg"
+        >
+          <h4 class="font-extrabold text-white text-2xl">
+            Meet all the heroes from the field
+          </h4>
+          <p class="font-md text-white">
+            Discover and connect with hockey's finest on our website - meet the
+            heroes who redefine the game and inspire greatness.
+          </p>
+        </div>
+      </div>
+    </header>
+
     <footer></footer>
   </body>
 </html>
